@@ -21,43 +21,40 @@ html {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: violet;
+    /* background-color: violet; */
 }
 
 .first-row {
     margin-bottom: 10px;
 }
 
-.prodotto {
+.product {
     height: 600px;
-    width: calc(33.33% - 7px);
+    width: calc(100% / 3 - 7px);
     margin-right: 10px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     float: left;
 }
 
-.prodotto:last-child {
+.product:last-child {
     margin-right: 0px;
 }
 
-.immagine-prodotto {
-    height: 80%;
-    width: 100%;
+.product-img {
+    height: 85%;
     background-color: lightblue;
     position: relative;
+    overflow: hidden;
 }
 
-.immagine-prodotto img {
-    height:100%; 
+.product-img img {
     width: 100%;
-    object-fit: cover;
+    position: absolute;
     
 }
 
-.descrizione-prodotto {
-    height: 20%;
-    width: 100%;
-    background-color: lightsalmon;
+.second-img:hover {
+    display: none;
 }
 
 .fav {
@@ -86,7 +83,6 @@ html {
     height: 20px;
     width: 40px;
     display: inline-block;
-    line-height: 20px;
 }
 
 .sustainable {
@@ -94,5 +90,35 @@ html {
     height: 20px;
     width: 70px;
     display: inline-block;
+}
+
+.sustainable span,
+.sale span {
     line-height: 20px;
+    vertical-align: middle;
+}
+
+.product-description {
+    margin-top: 10px;
+    /* background-color: lightsalmon; */
+}
+
+.product-description span {
+    font-weight: 300;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.product-description .actual-price {
+    color: red;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.product-description h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
