@@ -1,5 +1,79 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Common */
+clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Layout */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: violet;
+}
+
+.first-row {
+    margin-bottom: 10px;
+}
+
+.prodotto {
+    height: 600px;
+    width: calc(33% - 4px);
+    margin-right: 10px;
+    background-color: lightgreen;
+    float: left;
+}
+
+.prodotto:last-child {
+    margin-right: 0px;
+}
+
+.immagine-prodotto {
+    height: 80%;
+    width: 100%;
+    background-color: lightblue;
+    position: relative;
+}
+
+.descrizione-prodotto {
+    height: 20%;
+    width: 100%;
+    background-color: lightsalmon;
+}
+
+.fav {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.labels {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+.sale {
+    background-color: red;
+    height: 20px;
+    width: 40px;
+    display: inline-block;
+}
+
+.sustainable {
+    background-color: green;
+    height: 20px;
+    width: 70px;
+    display: inline-block;
 }
