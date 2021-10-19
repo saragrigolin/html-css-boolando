@@ -6,6 +6,7 @@
 }
 
 html {
+    font-size: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,14 +25,11 @@ html {
     /* background-color: violet; */
 }
 
-.first-row {
-    margin-bottom: 10px;
-}
-
 .product {
-    height: 600px;
-    width: calc(100% / 3 - 7px);
-    margin-right: 10px;
+    /* height: 600px; */
+    width: calc(100% / 3 - 4em / 3);
+    margin-right: 2em;
+    margin-bottom: 1em;
     /* background-color: lightgreen; */
     float: left;
 }
@@ -41,16 +39,24 @@ html {
 }
 
 .product-img {
-    height: 85%;
-    background-color: lightblue;
+    /* height: 85%; */
+    /* background-color: lightblue; */
     position: relative;
-    overflow: hidden;
 }
 
-.product-img img {
+.thumbs img {
     width: 100%;
+    display: block;
+}
+
+.product .thumbs {
+    position: relative;
+}
+
+.second-img {
     position: absolute;
-    
+    top: 0;
+    left: 0;
 }
 
 .second-img:hover {
@@ -59,47 +65,39 @@ html {
 
 .fav {
     background-color: white;
-    height: 30px;
-    width: 30px;
+    height: 2.5em;
+    width: 2.5em;
     position: absolute;
     right: 0;
-    top: 10px;
-    line-height: 30px;
+    top: 1em;
+    line-height: 2.5em;
     text-align: center;
 }
 
 .labels {
     position: absolute;
-    bottom: 10px;
-    left: 0px;
+    bottom: 1em;
+    left: 0p;
     color: white;
     font-weight: bold;
     font-size: 0.7em;
-    text-align: center;
+    width: 100%;
 }
 
 .sale {
     background-color: red;
-    height: 20px;
-    width: 40px;
+    padding: 0.5em;
     display: inline-block;
 }
 
 .sustainable {
     background-color: green;
-    height: 20px;
-    width: 70px;
+    padding: 0.5em;
     display: inline-block;
 }
 
-.sustainable span,
-.sale span {
-    line-height: 20px;
-    vertical-align: middle;
-}
-
 .product-description {
-    margin-top: 10px;
+    margin-top: 1em;
     /* background-color: lightsalmon; */
 }
 
